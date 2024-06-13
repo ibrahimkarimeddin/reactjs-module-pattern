@@ -1,0 +1,6 @@
+{
+    "folders" :  ["app" ]  ,
+    "base_folder_name" :"Module",
+    "git_keep" : false ,
+    "inside_src" : false
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@ibrahimkarimeddin/reactjs-module-pattern",
+  "version": "1.0.7",
+  "main": "index.js",
+  "scripts": {
+    "create": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "module": "./index.js"
+  },
+  "author": "Ibrahim Karim Eddin  (ibrahimkarimeddin@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {},
+  "description": "Avoids UnhandledPromiseRejectionWarning and PromiseRejectionHandledWarning",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsp/node-caught.git"
+  },
+  "keywords": [
+    "React js",
+    "Module",
+    "Folder Pattern",
+    "ReactStructure",
+    "Module Pattern"    
+  ]
+
+}
