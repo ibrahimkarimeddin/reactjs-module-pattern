@@ -1,6 +1,6 @@
 {
   "name": "@ibrahimkarimeddin/reactjs-module-pattern",
-  "version": "1.0.8",
+  "version": "1.0.9-beta",
   "main": "index.js",
   "scripts": {
     "create": "node index.js"

@@ -1,6 +1,22 @@
 {
-    "folders" :  ["app" ]  ,
-    "base_folder_name" :"Module",
-    "git_keep" : false ,
-    "inside_src" : false
+  "folders": [
+    "apis",
+    "enums",
+    "types",
+    "components",
+    "pages",
+    "states",
+    "hooks",
+    "utils",
+    "design-system",
+    "hooks",
+    "styles"
+  ],
+  "base_folder_name": "Module",
+  "git_keep": true,
+  "inside_src": true,
+  "custom_templates": {
+    "components": "Button.js",
+    "apis": "helpers/useAxios.js"
+  }
 }

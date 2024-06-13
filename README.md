@@ -13,6 +13,15 @@ npm i @ibrahimkarimeddin/reactjs-module-pattern
 
 
 ### Usage
+
+
+To init owing module config  run command:
+```sh
+npx module init 
+```
+
+this will create a configuration in root folder named `react-module.config.json`
+
 To create a new module, use the following command:
 ```sh
 npx module create <MODULE_NAME>
@@ -32,10 +41,11 @@ This will create a new module named MyNewModule inside the base folder defined i
 
 You can customize the module creation process by providing a `react-module.config.json` file in the root of your project. The configuration file supports the following options:
 
-- `folders`: An array of folder names to create inside each module. Default is `['app']`.
-- `base_folder_name`: The name of the base folder where modules will be created. Default is `Module`.
-- `git_keep`: A boolean indicating whether to create a `.gitkeep` file inside each folder. Default is `false`.
-- `inside_src`: A boolean indicating whether to place the base folder inside the `src` directory. Default is `false`.
+- `folders`: An array of folder names to create inside each module.
+- `base_folder_name`: The name of the base folder where modules will be created.
+- `git_keep`: A boolean indicating whether to create a `.gitkeep` file inside each folder.
+- `inside_src`: A boolean indicating whether to place the base folder inside the `src` directory.
+- `custom_templates` : A object containing the file templates to  create inside directories .
 
 
 
@@ -49,6 +59,10 @@ To customize the settings, create a file named `react-module.config.json` in the
     "folders":  ["apis", "enums", "types", "components","pages","states","hooks","utils","design-system","hooks", "styles"],
     "base_folder_name": "Module",
     "git_keep": true,
-    "inside_src": true
+    "inside_src": true,
+    "custom_templates":{
+        "components": "Button.js",
+        "apis" :"helpers/useAxios.js"
+     }
 }
 ```

@@ -16,13 +16,13 @@ function loadConfig() {
             "styles"
            ],
         baseFolderName: 'Module',
-        gitKeep: true
+        gitKeep: true , 
+        custom_templates :{}
         
     };
 
     if (fs.existsSync(configPath)) {
         const userConfig = fs.readJsonSync(configPath);
-        console.log(userConfig);
         return { ...defaultConfig, ...userConfig };
     }
 
