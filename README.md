@@ -7,7 +7,7 @@ This library helps you to create a standardized module structure in your React p
 To install the library, run the following command:
 
 ```sh
-npm i @ibrahimkarimeddin/reactjs-module-pattern
+npm i reactjs-module-pattern
 ```
 
 

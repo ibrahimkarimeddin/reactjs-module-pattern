@@ -1,6 +1,6 @@
 {
-  "name": "@ibrahimkarimeddin/reactjs-module-pattern",
-  "version": "1.0.9-beta",
+  "name": "reactjs-modules-pattern",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "create": "node index.js"
@@ -16,7 +16,6 @@
   },
   "devDependencies": {},
   "description": "his library helps you to create a standardized module structure in your React projects with customizable folder names and settings.",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ibrahimkarimeddin/reactjs-module-pattern.git"
@@ -26,7 +25,6 @@
     "Module",
     "Folder Pattern",
     "ReactStructure",
-    "Module Pattern"    
+    "Module Pattern"
   ]
-
 }
