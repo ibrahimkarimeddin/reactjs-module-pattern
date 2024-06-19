@@ -1,4 +1,4 @@
-# ReactJS Module Pattern
+# ReactJS Modules Pattern
 
 This library helps you to create a standardized module structure in your React projects with customizable folder names and settings.
 
@@ -7,7 +7,7 @@ This library helps you to create a standardized module structure in your React p
 To install the library, run the following command:
 
 ```sh
-npm i reactjs-module-pattern
+npm i reactjs-modules-pattern
 ```
 
 
