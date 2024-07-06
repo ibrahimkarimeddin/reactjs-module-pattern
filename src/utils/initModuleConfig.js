@@ -23,8 +23,6 @@ const { initPrettier, initEslint } = require('./createDependencies');
          initEslint(PackageManager)
      }
 
-    process.exit(1);
-    console.log(name);
 
     const config = {
         "folders": ["apis", "enums", "types", "components","pages","states","hooks","utils","design-system","hooks", "styles"],
