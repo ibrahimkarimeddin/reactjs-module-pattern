@@ -21,7 +21,13 @@ npx module init
 ```
 
 this will create a configuration in root folder named `react-module.config.json`
+During the initialization, you will be prompted with the following questions:
 
+```sh
+? Would you like to add Prettier for code formatting? (yes/no) yes
+? Would you like to add ESLint for code linting? (yes/no) no
+Select your package manager [npm , yarn , pnpm]  npm
+```
 To create a new module, use the following command:
 ```sh
 npx module create <MODULE_NAME>

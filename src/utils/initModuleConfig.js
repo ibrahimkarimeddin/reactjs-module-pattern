@@ -5,8 +5,8 @@ const { initPrettier, initEslint } = require('./createDependencies');
  async function initModuleConfig() {
 
     
-     const AddPrettier =  (await promptly.choose('Add Prettier ?' , ['yes', 'YES'  , 'no' , 'NO' ])).toLowerCase() === 'yes';
-     const AddEslint =  (await promptly.choose('Add Eslint ?' , ['yes', 'YES'  , 'no' , 'NO' ])).toLowerCase() === 'yes';
+     const AddPrettier =  (await promptly.choose('? Would you like to add Prettier for code formatting? (yes/no)' , ['yes', 'YES'  , 'no' , 'NO' ])).toLowerCase() === 'yes';
+     const AddEslint =  (await promptly.choose('? Would you like to add ESLint for code linting? (yes/no) ' , ['yes', 'YES'  , 'no' , 'NO' ])).toLowerCase() === 'yes';
 
      let PackageManager = null
      if(AddPrettier || AddEslint){
