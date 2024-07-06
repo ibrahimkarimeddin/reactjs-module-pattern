@@ -11,10 +11,11 @@
   "author": "Ibrahim Karim Eddin  (ibrahimkarimeddin@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "child_process": "^1.0.2",
     "commander": "^12.1.0",
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "promptly": "^3.2.0"
   },
-  "devDependencies": {},
   "description": "his library helps you to create a standardized module structure in your React projects with customizable folder names and settings.",
   "repository": {
     "type": "git",
@@ -26,5 +27,9 @@
     "Folder Pattern",
     "ReactStructure",
     "Module Pattern"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "prettier": "^3.3.2"
+  }
 }

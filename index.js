@@ -7,11 +7,9 @@ const { createModule } = require('./src/utils/createModule');
 const { initModuleConfig } = require('./src/utils/initModuleConfig');
 const { COMMAND_MODULE_INIT_CONFIG, COMMAND_MODULE_CREATE_NAME } = require('./src/constant/module');
 
-
 global.fs = fs;
 global.path = path;
 global.program = program;
-
 
 program
     .command(COMMAND_MODULE_INIT_CONFIG)
@@ -23,10 +21,9 @@ program
 program
     .command(COMMAND_MODULE_CREATE_NAME + ' <moduleName>')
     .description('Create a new module')
-    .action((moduleName) => {
+    .action(async (moduleName) => {
+     
         createModule(moduleName);
     });
-
-
 
 program.parse(process.argv);

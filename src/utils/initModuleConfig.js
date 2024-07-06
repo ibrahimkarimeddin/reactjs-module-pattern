@@ -1,6 +1,31 @@
 
+const promptly = require('promptly');
+const { initPrettier, initEslint } = require('./createDependencies');
 
-function initModuleConfig() {
+ async function initModuleConfig() {
+
+    
+     const AddPrettier =  (await promptly.choose('Add Prettier ?' , ['yes', 'YES'  , 'no' , 'NO' ])).toLowerCase() === 'yes';
+     const AddEslint =  (await promptly.choose('Add Eslint ?' , ['yes', 'YES'  , 'no' , 'NO' ])).toLowerCase() === 'yes';
+
+     let PackageManager = null
+     if(AddPrettier || AddEslint){
+         
+         PackageManager = await promptly.choose('Select your package manager [npm , yarn , pnpm]' , ['npm' ,'yarn' ,'pnpm']);
+
+     }
+     if(AddPrettier){
+         console.log('Installing Prettier');
+        initPrettier(PackageManager)
+     }
+     if(AddEslint){
+         console.log('Installing Eslint');
+         initEslint(PackageManager)
+     }
+
+    process.exit(1);
+    console.log(name);
+
     const config = {
         "folders": ["apis", "enums", "types", "components","pages","states","hooks","utils","design-system","hooks", "styles"],
         "base_folder_name": "Module",
