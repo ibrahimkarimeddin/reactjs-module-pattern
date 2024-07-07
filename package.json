@@ -1,6 +1,6 @@
 {
   "name": "reactjs-modules-pattern",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "create": "node index.js"
@@ -27,9 +27,5 @@
     "Folder Pattern",
     "ReactStructure",
     "Module Pattern"
-  ],
-  "devDependencies": {
-    "eslint": "^9.6.0",
-    "prettier": "^3.3.2"
-  }
+  ]
 }
